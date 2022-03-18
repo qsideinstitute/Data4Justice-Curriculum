@@ -36,7 +36,7 @@ library(knitr)
 library(treemapify)
 ```
 
-QSIDE is a 501(c)3 tax-exempt nonprofit organization. Initiatives like our Data4Justice curriculum require resources to produce, and we depend on a public that is willing to support social justice initiatives. Anyone is welcome to use this document for free, but we ask those who are able to [please make a donation to QSIDE](https://qsideinstitute.org/support-us/donate/) so that we can maintain our innovative research, action, and education efforts at the interface of data science and social justice.
+QSIDE is a 501(c)3 tax-exempt nonprofit organization. Initiatives like our Data4Justice curriculum require resources to produce, and we depend on a public that is willing to support social justice initiatives. Anyone is welcome to use this document for free, but we ask those who are able to [please make a donation to QSIDE](https://qsideinstitute.org/support-us/donate/) so that we can maintain our innovative research, action, and education efforts at the interface of data science and social justice. Additionally, we ask anyone using any or all of this document 
 
 Now let's get to learning!
 
@@ -71,6 +71,8 @@ While the museums were *not* chosen randomly, the idea of randomness plays a rol
 
 ## Define our variables and observations
 
+## Download data using RStudio
+
 In working with data, it is critical to be clear on what the variables are and what an observation is. *Variables* are characteristics we have information about. For instance, we will see that in the artists data set, variables include attributes like artist national origin and artist birth year. An *observation* is the collection of the values of variables for a unit of study. In the artists data set, an observation consists of all the information gathered about a specific artist within a specific museum. For example, Ana Mendieta is an artist who has at least one work in the San Francisco Museum of Modern Art, who was born in the decade beginning in 1900, and so forth. We will frequently use the word *record* interchangeably with *observation*. A widely-used standard for storing variables and records is that they appear in the form of a table (like a spreadsheet) where there is one column for each variable and one row for each record. For this reason, we will use *column* synonymously with variable, and *row* synonymously with observation and record.
 
 ## Key concepts, commands, and techniques
@@ -81,8 +83,6 @@ In working with data, it is critical to be clear on what the variables are and w
 * observation/record/row, which is a complete set of variable values for one unit of study
 
 # Get data ready to analyze in RStudio
-
-## Download data using RStudio
 
 The data for this study is available online at [https://github.com/artofstat/ArtistDiversity/raw/master/artistdata.csv](https://github.com/artofstat/ArtistDiversity/raw/master/artistdata.csv). This data is stored in a .csv file. A .csv file is a comma-separated-values file, where line breaks separate the records and, within a record, a comma separates the values of the variables. Often, on the first line of the .csv file there will be special information called *headers*. Headers are simply the names of the variables.
 
