@@ -15,6 +15,10 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(cache = TRUE)
 ```
 
+```
+Copyright: Institute for the Quantitative Study of Inclusion, Diversity, and Equity, 2022.
+```
+
 # Introduction
 
 Welcome to the case study portion of the Data4Justice curriculum developed by the [Institute for the Quantitative Study of Inclusion, Diversity, and Equity (QSIDE)](http://www.qsideinstitute.org). This case study is designed to help you learn data science skills in a social justice context. At QSIDE, we hope that our curriculum will be used by anyone and everyone who is interested in helping to right wrongs by using quantitative tools. This case study should be accessible to advanced high school students, to undergraduate students, and to more experienced academics in any field who would like to learn new skills and ideas. QSIDE also envisions our case study being used by individuals working in industry, government, and the nonprofit sphere, as well as any hobbyists and other members of the general public wanting to challenge themselves. In short, if you are interested to and positioned to learn more about the interface of social justice and data science, this case study is for you.
