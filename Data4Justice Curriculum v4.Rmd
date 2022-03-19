@@ -1323,7 +1323,7 @@ artistdata %>%
 * `fill = ` to tell `geom_treemap()` what color to make the rectangles
 * `size = ` to tell `geom_treemap()` what thickness to make separator lines
 
-# Appendix A: Ammerican Community Survey Data
+# Appendix A: American Community Survey Data
 
 Data from U.S. Census Bureau, ACS 2019 5-year estimates
 
