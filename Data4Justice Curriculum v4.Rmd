@@ -17,7 +17,7 @@ knitr::opts_chunk$set(cache = TRUE)
 
 ---
 
-This work is governed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license.
+This work is governed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 Citation: Chad M. Topaz, Andrew Lopez, Jude Higdon, Tyrone Bass. Data4Justice, ed. Brittney Bailey. National Math Festival and Institute for the Quantitative Study of Inclusion, Diversity, and Equity (2022).
 
@@ -1335,19 +1335,26 @@ artistdata %>%
 
 Data from U.S. Census Bureau, ACS 2019 5-year estimates
 
-| Ethnicity    | AGNN           | Man     | Woman   |
-|:------------:|:--------------:|:-------:|:-------:|
-| AIAN         | Not Measured   | 0.4%    | 0.4%    |
-| Asian        | Not Measured   | 2.6%    | 2.9%.   |
-| Black        | Not Measured   | 6.1%    | 6.6%    |
-| Latinx       | Not Measured   | 8.7%    | 8.5%    |
-| NHPI         | Not Measured   | 0.1%    | 0.1%    |
-| Not Listed.  | Not Measured   | 1.4%    | 1.4%    |
-| White        | Not Measured   | 30.0%   | 30.9%   |
+```{r echo = FALSE}
+Ethnicity <- c("AIAN","ASIAN","Black","Latinx","NHPI","Not Listed","White")
+AGNN <- rep("Not Measured", 7)
+Man <- percent(c(0.004,0.026,0.061,0.087,0.001,0.014,0.300),0.1)
+Woman <- percent(c(0.004,0.029,0.066,0.085,0.001,0.014,0.039))
+df <- data.frame(Ethnicity = Ethnicity, AGNN = AGNN, Man = Man, Woman = Woman)
+kable(df, align = "llrr")
+```
 
 # Appendix B: Global World Population {-}
 
 Data from U.S. Census Bureau, as of 2020
+
+```{r echo = FALSE}
+Continent <- c("Africa", "Asia", "Europe", "North America", "Oceania", "South America")
+Population <- c("1,261","4,531","731","595","39","440")
+Percent <- percent(c(0.1660,0.5964,0.0962,0.0783,0.0051,0.0579), 0.01)
+df <- data.frame(Continent = Continent, Population = Population, Percent = Percent)
+kable(df, col.names = c("Continent", "Population (millions)", "Percent of Total"), align = "lrr")
+```
 
 | Continent     | Population (millions) | Percent of Total |
 |:-------------:|:---------------------:|:----------------:|
